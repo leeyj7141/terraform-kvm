@@ -88,7 +88,7 @@ resource "null_resource" "run_vm_ctrl_dhcp_network" {
 
 # centos 7 template image
 resource "libvirt_volume" "centos7_image" {
-  name   = "kolla_centos7_image.qcow2"
+  name   = "centos7_image.qcow2"
   pool   = "${var.vm_vol_pool_name}"
   source = "${var.cloud_image_dir}/${var.cloud_image_file}"
 }
