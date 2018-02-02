@@ -88,7 +88,7 @@ resource "null_resource" "run_vm_ctrl_dhcp_network" {
 
 # centos 7 template image
 resource "libvirt_volume" "centos7_image" {
-  name   = "centos7_image.qcow2"
+  name   = "kolla_centos7_image.qcow2"
   pool   = "${var.vm_vol_pool_name}"
   source = "${var.cloud_image_dir}/${var.cloud_image_file}"
 }
@@ -110,7 +110,7 @@ data "template_file" "vm_resize_ctrl_root_volume" {
     volume_name = "${element(var.vm_controller_names, count.index)}_vol.img"
     volume_size = "${var.vm_controller_type["root_disk_size"]}"
   }
-  depends_on = ["libvirt_volume.vm_crtl_root_volume"]
+  depends_on = ["libvirt_volume.vm_ctrl_root_volume"]
 }
 
 resource "null_resource" "run_vm_resize_ctrl_root_volume" {
@@ -192,7 +192,7 @@ data "template_file" "vm_com_dhcp_network" {
   }
 }
 
-output "network1-output1" {
+output "network1-output2" {
   value = ["${data.template_file.vm_com_dhcp_network.*.rendered}"]
 }
 

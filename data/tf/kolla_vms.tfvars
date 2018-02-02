@@ -12,9 +12,9 @@ vm_controller_type = {
 }
 
 vm_controller_ip_addresses = [
-  "10.10.10.11",
-  "10.10.10.12",
-  "10.10.10.13"
+  "10.20.10.11",
+  "10.20.10.12",
+  "10.20.10.13"
 ]
 
 vm_controller_mac_addresses = [
@@ -38,9 +38,9 @@ vm_compute_type = {
 }
 
 vm_compute_ip_addresses = [
-  "10.10.10.21",
-  "10.10.10.22",
-  "10.10.10.23"
+  "10.20.10.21",
+  "10.20.10.22",
+  "10.20.10.23"
 ]
 
 vm_compute_mac_addresses = [

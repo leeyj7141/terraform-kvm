@@ -12,9 +12,9 @@ vm_ceph_mon_type = {
 }
 
 vm_ceph_mon_ip_addresses = [
-  "10.10.10.31",
-  "10.10.10.32",
-  "10.10.10.33"
+  "10.20.10.31",
+  "10.20.10.32",
+  "10.20.10.33"
 ]
 
 vm_ceph_mon_mac_addresses = [
@@ -44,9 +44,9 @@ vm_ceph_osd_type = {
 vm_ceph_osd_volume_name_fmt = "ceph-osd%02d_%02d.img"
 
 vm_ceph_osd_ip_addresses = [
-  "10.10.10.41",
-  "10.10.10.42",
-  "10.10.10.43",
+  "10.20.10.41",
+  "10.20.10.42",
+  "10.20.10.43",
 ]
 
 vm_ceph_osd_mac_addresses = [
